@@ -1,0 +1,535 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>blessed</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <!-- fevicon -->
+    <link
+      rel="icon"
+      href="{% static 'images/fevicon.png' %}"
+      type="image/gif"
+    />
+    <!-- Scrollbar Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'css/jquery.mCustomScrollbar.min.css' %}"
+    />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader">
+        <img src="{% static 'images/loading.gif' %}" alt="#" />
+      </div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="head_top">
+        {% comment %}
+        <div class="container">
+          <div class="header">
+            <div class="row">
+              {% endcomment %} {% comment %}
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                <div class="full">
+                  <div class="center-desk">
+                    <div class="logo">
+                      <a href="index.html">
+                        <img src="{% static 'images/logo.png' %}" alt="#"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endcomment %} {% comment %}
+              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                <nav class="navigation navbar navbar-expand-md navbar-dark">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarsExample04"
+                    aria-controls="navbarsExample04"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> Home </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              {% endcomment %} {% comment %}
+            </div>
+          </div>
+        </div>
+        {% endcomment %}
+        <!-- end header inner -->
+        <!-- end header -->
+        <!-- banner -->
+        <section class="banner_main">
+          <div class="container">
+            <div class="row d_flex">
+              <div class="col-md-12">
+                <div class="text-bg">
+                  <span>
+                    Find Your Special day<br />
+                    "The day you are going to get married"</span
+                  >
+
+                  {% if messages %} {% for message in messages %}
+                  <h3 style="font-size: 30px">Your date of Marraige</h3>
+                  <span style="color: black; font-weight: bold"
+                    >{{ message }}</span
+                  >
+                  {% endfor %} {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- end banner -->
+    <!-- weare -->
+    {% comment %}
+    <div class="weare">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Who We Are</h2>
+              <span
+                >d to be sure there isn't anything embarrassing hidden in the
+                middle of text. All the Lorem Ipsum gener</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="row">
+              <div class="col-md-6 margin_boo">
+                <div class="weare_box">
+                  <figure>
+                    <img src="{% static 'images/weare_img1.png' %}" alt="#" />
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="weare_box">
+                  <figure>
+                    <img src="{% static 'images/weare_img2.png' %}" alt="#" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="weare_box">
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat pre
+              </p>
+              <a class="read_more" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- weare -->
+    <!-- Our -->
+    <div id="" class="Our">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Our Planning Includes</h2>
+              <span
+                >We are glad to provide these services for your wedding with
+                perfect planning.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="Our_box">
+              <i><img src="{% static 'images/plan1.png' %}" alt="#" /></i>
+              <h4>FLOWER DECORATIONS</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod t dolor in reprehenderit in voluptate velit
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="Our_box">
+              <i><img src="{% static 'images/plan2.png' %}" alt="#" /></i>
+              <h4>BEST RESTAURANT</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod t dolor in reprehenderit in voluptate velit
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="Our_box">
+              <i><img src="{% static 'images/plan3.png' %}" alt="#" /></i>
+              <h4>HONEYMOON</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod t dolor in reprehenderit in voluptate velit
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <a class="read_more" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endcomment %}
+    <!-- end Our -->
+    <!-- regist -->
+    <div id="regist" class="regist">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Enter details</h2>
+              <span style="font-weight: bold"
+                >Love has nothing to do with what you are expecting to get—only
+                with what you are expecting to give</span
+              ><br />
+              <span style="color: #db7093"
+                >You will see your Marraige date</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="main_form" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Full Name"
+                    type="text"
+                    name="name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="DOB"
+                    type="date"
+                    name="dob"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Place"
+                    type="text"
+                    name="place"
+                  />
+                </div>
+
+                <div class="col-sm-12">
+                  <button class="register">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end regist -->
+    <!-- testimonial -->
+    <div class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>
+                Love is an irresistible desire to be irresistibly desired.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="myCarousel"
+              class="carousel slide testimonial_Carousel"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="test_box">
+                            {% comment %}
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img1.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                          {% endcomment %}
+                        </div>
+                        <div class="col-md-6">
+                          <div class="test_box">
+                            {% comment %}
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img2.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                          {% endcomment %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="test_box">
+                            {% comment %}
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img1.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                          {% endcomment %}
+                        </div>
+                        <div class="col-md-6">
+                          <div class="test_box">
+                            {% comment %}
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img2.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                          {% endcomment %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <div class="row">
+                        <div class="col-md-6">
+                          {% comment %}
+                          <div class="test_box">
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img1.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                        </div>
+                        {% endcomment %}
+                        <div class="col-md-6">
+                          <div class="test_box">
+                            {% comment %}
+                            <div class="jons">
+                              <i
+                                ><img
+                                  src="{% static 'images/jons_img2.png' %}"
+                                  alt="#"
+                              /></i>
+                              <h4>Jonson Donat</h4>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehe
+                            </p>
+                          </div>
+                          {% endcomment %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end testimonial -->
+    <!--  footer -->
+    <br /><br /><br /><br /><br /><br />
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="cont">
+                <h3>
+                  <strong class="multi"> Live-Love, Live Long</strong><br />
+                  <span>Trusted by over 35 Million Members</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Dedicated to MY K..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+    <!-- sidebar -->
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  </body>
+</html>
