@@ -48,14 +48,14 @@ def home_view(request):
             
             lst2_name = ["siddharth", "Siddharth", "SIDDHARTH", "sidhu", "Sidhu", "SIDHU"]
             lst2_place=["cbe", "Cbe", "CBE", "coimbatore", "Coimabtore","COIMBATORE"]
-            if name in lst1_name and place in lst1_place:
+            if ((name in lst1_name) and (place in lst1_place)):
                 mrg_date="22-8-2025 $😍"
                 db_data= db_store.objects.create(name=name, date=dob, place=place, domrg=mrg_date)
                 db_data.save()
                 messages.success(request, mrg_date)
                 return redirect('homepage') 
             
-            elif name in lst2_name and place in lst2_place and dob=="1994-08-22":
+            elif ((name in lst2_name) and (place in lst2_place) and (dob=="1994-08-22")):
                 mrg_date="To my Amu 😘😘😍🫂"
                 messages.success(request, mrg_date)
                 return redirect('homepage')
