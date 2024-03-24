@@ -14,7 +14,7 @@ def home_view(request):
         day=random.randint(1, 30)
         month=random.randint(1, 12) 
         yr = dob.split('-')[0]  
-        year = random.randint(int(yr)+22, int(yr)+30)
+        year = random.randint(int(yr)+26, int(yr)+32)
         
         mrg_date=f"{day}-{month}-{year}"
         
